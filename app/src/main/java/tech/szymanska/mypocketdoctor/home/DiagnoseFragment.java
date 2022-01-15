@@ -87,16 +87,30 @@ public class DiagnoseFragment extends Fragment {
         EditText editText = this.view.findViewById(R.id.inputSymptoms);
         if (editText.getText().toString().trim().length() > 0) {
             this.hideMessageBox();
-            LinearLayout linearLayout = (LinearLayout) View.inflate(this.getContext(), R.layout.message_user,
-                    null);
-            TextView valueTV = linearLayout.findViewById(R.id.userMessage);
-            valueTV.setText(editText.getText().toString());
-            chatLayout.addView(linearLayout);
+            createUserMessage(editText);
+            createDoctorMessage();
         } else {
             Toast.makeText(this.getContext(), getString(R.string.input_can_not_be_empty),
                     Toast.LENGTH_LONG).show();
         }
     }
+
+    private void createUserMessage(EditText editText) {
+        LinearLayout linearLayout = (LinearLayout) View.inflate(this.getContext(), R.layout.message_user,
+                null);
+        TextView valueTV = linearLayout.findViewById(R.id.userMessage);
+        valueTV.setText(editText.getText().toString());
+        chatLayout.addView(linearLayout);
+    }
+
+    private void createDoctorMessage() {
+        LinearLayout linearLayout = (LinearLayout) View.inflate(this.getContext(), R.layout.message_doctor,
+                null);
+        TextView valueTV = linearLayout.findViewById(R.id.doctorMessage);
+        valueTV.setText("Do you have a runny nose?");
+        this.chatLayout.addView(linearLayout);
+    }
+
 
     public void hideMessageBox() {
         this.animate.hideMessageBox();
