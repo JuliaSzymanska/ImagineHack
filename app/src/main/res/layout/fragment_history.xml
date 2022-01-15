@@ -3,14 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="5dp"
+    android:layout_marginHorizontal="10dp"
     android:orientation="vertical"
+    android:paddingVertical="5dp"
+    android:paddingHorizontal="10dp"
     tools:context=".home.HistoryFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
+        android:clickable="true"
         android:background="@drawable/mess_doctor_opacity"
         android:orientation="vertical">
 
@@ -20,15 +23,15 @@
             android:layout_marginStart="10dp"
             android:text="I feel pain in my knee"
             android:textColor="@color/background_grey"
-            android:textSize="22sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="10.12.2020 13:41"
-            android:textColor="@color/background_grey"
-            android:textSize="18sp" />
+            android:text="10.12.2021 13:41"
+            android:textColor="@color/background_grey_tranp"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -39,6 +42,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:clickable="true"
         android:background="@drawable/mess_doctor_opacity"
         android:orientation="vertical">
 
@@ -47,18 +52,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="I feel pain in my knee"
+            android:text="Have a headache"
             android:textColor="@color/background_grey"
-            android:textSize="22sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/chatTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="10.12.2020 13:41"
-            android:textColor="@color/background_grey"
-            android:textSize="18sp" />
+            android:text="03.01.2022 09:03"
+            android:textColor="@color/background_grey_tranp"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
