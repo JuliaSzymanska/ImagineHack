@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popupWindowRelativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="20dp">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/title"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="15dp"-->
+    <!--        android:text="Add new user"-->
+    <!--        android:textColor="#A85E5E5E"-->
+    <!--        android:textSize="10sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/nameLabel"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/title"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="25dp"-->
+    <!--        android:elevation="20dp"-->
+    <!--        android:textColor="@color/background_grey"-->
+    <!--        android:text="Name"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/name"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_below="@id/title"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginTop="25dp"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:layout_toEndOf="@id/birthDateLabel"/>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/sexLabel"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/nameLabel"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="25dp"-->
+    <!--        android:elevation="20dp"-->
+    <!--        android:textColor="@color/background_grey"-->
+    <!--        android:text="Sex: "-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/sex"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_below="@id/nameLabel"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginTop="25dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:layout_toEndOf="@id/birthDateLabel"-->
+    <!--        android:hint="YYYY-MM-DD"-->
+    <!--        android:inputType="number" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/birthDateLabel"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/sexLabel"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginEnd="50dp"-->
+    <!--        android:layout_marginTop="25dp"-->
+    <!--        android:elevation="20dp"-->
+    <!--        android:text="Birth date: "-->
+    <!--        android:textColor="@color/background_grey"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/birthDate"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_below="@id/sexLabel"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginTop="25dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:inputType="date"-->
+    <!--        android:layout_toEndOf="@id/birthDateLabel"-->
+    <!--        android:hint="YYYY-MM-DD"/>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/generateButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/birthDate"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginBottom="15dp"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:background="@drawable/button_background"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:text="ADD"-->
+    <!--        android:textSize="18sp" />-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/addUserImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/female" />
+
+            <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+            <!--                android:id="@+id/addUserImage"-->
+            <!--                app:civ_border_color="@color/blue_dark"-->
+            <!--                app:civ_border_width="2dp"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--                android:layout_width="158dp"-->
+            <!--                android:layout_height="167dp"-->
+            <!--                android:background="@android:color/transparent" />-->
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addUserImage">
+
+            <LinearLayout
+                android:id="@+id/profile_name_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/profile_name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="@string/profile_name"
+                    android:textSize="15sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/backArrow" />
+
+                <EditText
+                    android:id="@+id/edit_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    tools:layout_editor_absoluteX="38dp"
+                    tools:layout_editor_absoluteY="347dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/sex_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/firstChatMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="@string/sex"
+                    android:textSize="15sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/backArrow" />
+
+                <ImageButton
+                    android:id="@+id/female"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="60dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/female" />
+
+                <ImageButton
+                    android:id="@+id/male"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="60dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/male" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/birth_date_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/birth_date_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="@string/birth_date"
+                    android:textSize="15sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/backArrow" />
+
+                <Button
+                    android:id="@+id/dateEditTextFragmentAddProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:focusable="true"
+                    android:text="@string/yyyy_mm_dd" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--        <Button-->
+        <!--            android:id="@+id/fgAddButton"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="60dp"-->
+        <!--            android:text="@string/add"-->
+        <!--            android:textColor="@color/background_grey" />-->
+
+
+        <Button
+            android:id="@+id/generateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_background"
+            android:padding="10dp"
+            android:paddingHorizontal="30dp"
+            android:text="ADD"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -24,5 +24,4 @@
         android:text="@string/my_pocket_doctor"
         android:textSize="18sp" />
 
-
 </LinearLayout>

@@ -15,4 +15,9 @@
     <string name="no">NO</string>
     <string name="dont_know">DON\'T KNOW</string>
     <string name="finish">FINISH</string>
+    <string name="profile_name">"Profile name: "</string>
+    <string name="sex">Sex:</string>
+    <string name="birth_date">Birth date:</string>
+    <string name="yyyy_mm_dd">YYYY-MM-DD</string>
+    <string name="add">Add</string>
 </resources>
