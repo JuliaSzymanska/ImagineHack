@@ -111,6 +111,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -123,6 +124,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
                 android:src="@drawable/female" />
 
             <!--            <de.hdodenhof.circleimageview.CircleImageView-->
@@ -143,7 +145,7 @@
             android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="50dp"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/addUserImage">
@@ -235,25 +237,15 @@
                     android:id="@+id/dateEditTextFragmentAddProfile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
                     android:background="@android:color/transparent"
                     android:focusable="true"
-                    android:text="@string/yyyy_mm_dd" />
+                    android:text="@string/yyyy_mm_dd"
+                    android:textColor="@color/background_grey" />
 
             </LinearLayout>
 
         </LinearLayout>
-
-        <!--        <Button-->
-        <!--            android:id="@+id/fgAddButton"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginTop="60dp"-->
-        <!--            android:text="@string/add"-->
-        <!--            android:textColor="@color/background_grey" />-->
-
 
         <Button
             android:id="@+id/generateButton"

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".home.UsersFragment">
 
     <LinearLayout
@@ -26,13 +27,23 @@
 
             <TextView
                 android:id="@+id/userName"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Julia"
+                android:text="Natalia"
                 android:layout_marginStart="10dp"
                 android:textColor="@color/background_grey"
                 android:padding="5dp"
                 android:textSize="22sp" />
+
+            <Space
+                android:layout_width="160dp"
+                android:layout_height="12dp"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/edit"/>
 
         </LinearLayout>
 
@@ -44,7 +55,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:clickable="true"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/userImage2"
@@ -55,13 +67,23 @@
 
             <TextView
                 android:id="@+id/userName2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:layout_marginStart="10dp"
-                android:text="Maciek"
+                android:text="Michał"
                 android:textColor="@color/background_grey"
                 android:textSize="22sp" />
+
+            <Space
+                android:layout_width="160dp"
+                android:layout_height="12dp"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/edit"/>
 
         </LinearLayout>
 
