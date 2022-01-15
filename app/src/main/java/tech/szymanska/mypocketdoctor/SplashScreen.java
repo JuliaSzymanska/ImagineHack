@@ -1,8 +1,11 @@
 package tech.szymanska.mypocketdoctor;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import tech.szymanska.mypocketdoctor.home.Home;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -16,6 +19,8 @@ public class SplashScreen extends AppCompatActivity {
                 Thread.sleep(500);
             } catch (InterruptedException iEx) {
                 iEx.printStackTrace();
+            } finally {
+                SplashScreen.this.startActivity(new Intent(SplashScreen.this, Home.class));
             }
         });
         timer.start();
