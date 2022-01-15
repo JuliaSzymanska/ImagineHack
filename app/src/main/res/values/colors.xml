@@ -9,6 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lightBlue">#59E6F7</color>
     <color name="lightBlueDarker">#0ad8ee</color>
+    <color name="blueDoctor">#64CDEE</color>
+    <color name="blueUser">#3FA9CA</color>
     <color name="darkBlue">#0999df</color>
     <color name="darkBlueDarker">#0880bc</color>
     <color name="very_light_grey_transparent">#26C3C1C1</color>
