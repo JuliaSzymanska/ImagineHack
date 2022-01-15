@@ -1,44 +1,70 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@color/white"
-tools:context=".home.DiagnoseFragment">
-
-<FrameLayout
-    android:id="@+id/layoutToBeReplacedWithFragmentInMenu"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".home.DiagnoseFragment">
 
-    <RelativeLayout
+    <FrameLayout
+        android:id="@+id/layoutToBeReplacedWithFragmentInMenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ScrollView
-            android:id="@+id/scrollViewChat"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@+id/inputLayout"
-            android:layout_alignParentEnd="true">
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollViewChat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/inputLayout"
+                android:layout_alignParentEnd="true">
+
+                <LinearLayout
+                    android:id="@+id/chatLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical">
+
+                </LinearLayout>
+            </ScrollView>
 
             <LinearLayout
-                android:id="@+id/chatLayout"
+                android:id="@+id/inputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:scrollbars="vertical">
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="1dp">
+
+                <EditText
+                    android:id="@+id/inputSymptoms"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:autofillHints="Type Your symptoms..."
+                    android:ems="30"
+                    android:hint="@string/type_your_symptoms"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:maxLines="6"
+                    android:minLines="2"
+                    android:scrollbars="vertical" />
+
+                <Button
+                    android:id="@+id/sendSymptoms"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/send_message"
+                    android:gravity="end" />
 
             </LinearLayout>
-        </ScrollView>
-
-        <include
-            android:id="@+id/inputLayout"
-            layout="@layout/msg_input_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="3dp" />
-
-    </RelativeLayout>
-</FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
 </RelativeLayout>

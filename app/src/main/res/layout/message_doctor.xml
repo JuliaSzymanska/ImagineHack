@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15sp"
         android:background="@drawable/mess_doctor"
+        android:lineSpacingExtra="4sp"
         android:padding="18sp"
         android:textColor="@color/background_grey"
         android:textSize="16sp" />

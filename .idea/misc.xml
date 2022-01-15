@@ -8,6 +8,7 @@
         <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/drawable/doctor_border.xml" value="0.2703125" />
         <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/drawable/ic_rysunek.xml" value="0.26296296296296295" />
         <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/drawable/send_message.xml" value="0.2703125" />
+        <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/drawable/user_border.xml" value="0.2703125" />
         <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/layout/doctor_message.xml" value="0.25416666666666665" />
@@ -15,6 +16,8 @@
         <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/layout/fragment_history.xml" value="0.25416666666666665" />
         <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/layout/fragment_home_collection.xml" value="0.25416666666666665" />
         <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/layout/fragment_users.xml" value="0.13020833333333334" />
+        <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/layout/message_doctor.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/layout/message_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/layout/msg_input_bar.xml" value="0.264" />
         <entry key="..\:/Dokumenty/Dokumenty/Studia/Hackathon/ImagineHack/app/src/main/res/layout/top_bar_home.xml" value="0.25416666666666665" />
       </map>
