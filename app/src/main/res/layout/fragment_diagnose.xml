@@ -14,22 +14,132 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ScrollView
-                android:id="@+id/scrollViewChat"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_above="@+id/inputLayout"
-                android:layout_alignParentEnd="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:paddingBottom="8dp">
 
                 <LinearLayout
-                    android:id="@+id/chatLayout"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:scrollbars="vertical">
+                    android:padding="15dp"
+                    android:background="@drawable/mess_doctor"
+                    android:orientation="vertical">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15sp"
+                        android:background="@android:color/transparent"
+                        android:paddingTop="10dp"
+                        android:text="@string/tabDiagnose"
+                        android:textColor="@color/darkBlueDarker"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/most_likely_conditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15sp"
+                        android:paddingTop="20dp"
+                        android:text="@string/most_likely_condition"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/most_likely_conditions2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15sp"
+                        android:paddingTop="20dp"
+                        android:text="Acute viral tonsillopharyngitis"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/standard_info"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginHorizontal="15sp"-->
+<!--                        android:paddingTop="10dp"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textStyle="bold" />-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/advanced_info_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginHorizontal="15sp"
+                            android:background="@android:color/transparent"
+                            android:paddingTop="20dp"
+                            android:text="@string/show_more"
+                            android:textColor="@color/darkBlue" />
+
+                        <Button
+                            android:id="@+id/export_to_pdf_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginHorizontal="15sp"
+                            android:background="@android:color/transparent"
+                            android:onClick="onExportButtonClick"
+                            android:paddingTop="20dp"
+                            android:text="@string/export_to_pdf"
+                            android:textColor="@color/darkBlue" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/advanced_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15sp"
+                        android:paddingTop="10sp"
+                        android:text="Name: Acute viral tonsillopharyngitis
+                        \nProbability: 53.65%
+                        \n\nName: Common cold
+                    \nProbability: 27.91%
+                    \n\nName: Acute streptococcal tronsillopharyngitis
+                    \nProbability: 13.47%
+                    \n\nName: Flu
+                    \nProbability: 9.68%
+                    \n\nName: Acute laryngitis
+                    \nProbability: 7.61%"
+                        android:textSize="16sp"/>
                 </LinearLayout>
-            </ScrollView>
+            </LinearLayout>
+
+<!--            <ScrollView-->
+<!--                android:id="@+id/scrollViewChat"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_above="@+id/inputLayout"-->
+<!--                android:layout_alignParentEnd="true">-->
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/chatLayout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:scrollbars="vertical">-->
+
+<!--                </LinearLayout>-->
+<!--            </ScrollView>-->
 
             <LinearLayout
                 android:id="@+id/inputLayout"
@@ -38,6 +148,7 @@
                 android:layout_alignParentBottom="true"
                 android:gravity="center"
                 android:layout_margin="5dp"
+                android:visibility="invisible"
                 android:orientation="horizontal"
                 android:paddingHorizontal="3dp">
 
@@ -53,6 +164,7 @@
                     android:inputType="textMultiLine"
                     android:lines="4"
                     android:maxLines="6"
+
                     android:minLines="2"
                     android:scrollbars="vertical" />
 

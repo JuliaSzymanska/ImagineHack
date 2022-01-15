@@ -22,4 +22,7 @@
     <string name="add">Add</string>
     <string name="_1995_03_23">1995-03-23</string>
     <string name="add1">ADD</string>
+    <string name="most_likely_condition">Your condition is most likely:</string>
+    <string name="show_more">SHOW MORE</string>
+    <string name="export_to_pdf">EXPORT TO PDF</string>
 </resources>

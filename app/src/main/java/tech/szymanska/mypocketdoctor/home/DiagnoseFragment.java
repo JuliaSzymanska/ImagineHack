@@ -42,42 +42,42 @@ public class DiagnoseFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
        this.getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
-        chatLayout = view.findViewById(R.id.chatLayout);
-        chatLayout.setOnHierarchyChangeListener(new ViewGroup.OnHierarchyChangeListener() {
-            @Override
-            public void onChildViewAdded(View parent, View child) {
-                DiagnoseFragment.this.scrollChat();
-            }
-
-            @Override
-            public void onChildViewRemoved(View parent, View child) {
-            }
-        });
+//        chatLayout = view.findViewById(R.id.chatLayout);
+//        chatLayout.setOnHierarchyChangeListener(new ViewGroup.OnHierarchyChangeListener() {
+//            @Override
+//            public void onChildViewAdded(View parent, View child) {
+//                DiagnoseFragment.this.scrollChat();
+//            }
+//
+//            @Override
+//            public void onChildViewRemoved(View parent, View child) {
+//            }
+//        });
         this.view = view;
-        this.setFirstMessage();
+//        this.setFirstMessage();
         this.animate = new Animate();
         slide_out_message_box = AnimationUtils.loadAnimation(this.getContext(), R.anim.slide_out_messbox);
         this.inputLayout = view.findViewById(R.id.inputLayout);
         this.setSendMessageButton();
     }
 
-    private void scrollChat() {
-        ScrollView scrollViewChat = this.view.findViewById(R.id.scrollViewChat);
-        scrollViewChat.post(() -> scrollViewChat.fullScroll(View.FOCUS_DOWN));
-    }
+//    private void scrollChat() {
+//        ScrollView scrollViewChat = this.view.findViewById(R.id.scrollViewChat);
+//        scrollViewChat.post(() -> scrollViewChat.fullScroll(View.FOCUS_DOWN));
+//    }
 
-    private void setFirstMessage() {
-        String firstDoctorMessage =
-                getString(R.string.hallo_only)
-                        + " Natalia! "
-                        + getString(R.string.how_can_i_help_you);
-        LinearLayout linearLayout = (LinearLayout) View.inflate(this.getContext(), R.layout.message_doctor,
-                null);
-        TextView valueTV = linearLayout.findViewById(R.id.doctorMessage);
-        valueTV.setText(firstDoctorMessage);
-        LinearLayout chatLayout = this.view.findViewById(R.id.chatLayout);
-        chatLayout.addView(linearLayout);
-    }
+//    private void setFirstMessage() {
+//        String firstDoctorMessage =
+//                getString(R.string.hallo_only)
+//                        + " Natalia! "
+//                        + getString(R.string.how_can_i_help_you);
+//        LinearLayout linearLayout = (LinearLayout) View.inflate(this.getContext(), R.layout.message_doctor,
+//                null);
+//        TextView valueTV = linearLayout.findViewById(R.id.doctorMessage);
+//        valueTV.setText(firstDoctorMessage);
+////        LinearLayout chatLayout = this.view.findViewById(R.id.chatLayout);
+////        chatLayout.addView(linearLayout);
+//    }
 
     private void setSendMessageButton() {
         Button button = this.view.findViewById(R.id.sendSymptoms);
@@ -88,8 +88,8 @@ public class DiagnoseFragment extends Fragment {
         EditText editText = this.view.findViewById(R.id.inputSymptoms);
         if (editText.getText().toString().trim().length() > 0) {
             this.hideMessageBox();
-            createUserMessage(editText);
-            createDoctorMessage();
+//            createUserMessage(editText);
+//            createDoctorMessage();
         } else {
             Toast.makeText(this.getContext(), getString(R.string.input_can_not_be_empty),
                     Toast.LENGTH_LONG).show();
