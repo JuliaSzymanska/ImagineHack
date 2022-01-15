@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyPocketDoctor</string>
+    <string name="a_doctor_nin_your_pocket">A doctor in your pocket</string>
 </resources>
