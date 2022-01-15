@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.Space;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -109,8 +110,22 @@ public class DiagnoseFragment extends Fragment {
         TextView valueTV = linearLayout.findViewById(R.id.doctorMessage);
         valueTV.setText("Do you have a runny nose?");
         this.chatLayout.addView(linearLayout);
+        this.addResponseButtons();
     }
 
+    public void addResponseButtons() {
+        String[] msg = {"YES", "NO", "DON'T KNOW", "FINISH"};
+        this.inputLayout.removeAllViews();
+        this.inputLayout.setAnimation(AnimationUtils.loadAnimation(this.getContext(), R.anim.slide_in_buttons));
+        for (int i = 0; i < msg.length; i++) {
+            Button button = (Button) View.inflate(this.getContext(), R.layout.answer_button, null);
+            button.setText(msg[i]);
+            this.inputLayout.addView(button);
+            Space space = new Space(this.getContext());
+            space.setLayoutParams(new LinearLayout.LayoutParams(12, 8));
+            this.inputLayout.addView(space);
+        }
+    }
 
     public void hideMessageBox() {
         this.animate.hideMessageBox();

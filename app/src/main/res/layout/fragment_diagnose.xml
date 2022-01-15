@@ -31,13 +31,49 @@
                 </LinearLayout>
             </ScrollView>
 
-            <include
+            <LinearLayout
                 android:id="@+id/inputLayout"
-                layout="@layout/msg_input_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="3dp" />
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="3dp">
+
+                <EditText
+                    android:id="@+id/inputSymptoms"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:autofillHints="Type Your symptoms..."
+                    android:ems="30"
+                    android:hint="@string/type_your_symptoms"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:maxLines="6"
+                    android:minLines="2"
+                    android:scrollbars="vertical" />
+
+                <Button
+                    android:id="@+id/sendSymptoms"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/send_message"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+<!--            <include-->
+<!--                android:id="@+id/answer_buttons"-->
+<!--                layout="@layout/answer_buttons_bar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="invisible"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginBottom="3dp" />-->
 
         </RelativeLayout>
     </FrameLayout>

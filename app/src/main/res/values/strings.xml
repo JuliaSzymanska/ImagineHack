@@ -1,7 +1,6 @@
 <resources>
-    <string name="app_name">MyPocketDoctor</string>
+    <string name="app_name">My Pocket Doctor</string>
     <string name="a_doctor_nin_your_pocket">A doctor in your pocket</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tabDiagnose">Diagnose</string>
     <string name="tabHistory">History</string>
@@ -12,4 +11,8 @@
     <string name="hallo_only">"Hello  "</string>
     <string name="how_can_i_help_you">\nHow can I help you today?</string>
     <string name="input_can_not_be_empty">Input can not be empty.</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="dont_know">DON\'T KNOW</string>
+    <string name="finish">FINISH</string>
 </resources>
