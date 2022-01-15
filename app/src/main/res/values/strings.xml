@@ -7,4 +7,6 @@
     <string name="tabHistory">History</string>
     <string name="tabUsers">Users</string>
     <string name="my_pocket_doctor">My Pocket Doctor</string>
+    <string name="add_new">Create new</string>
+    <string name="type_your_symptoms">Type Your symptoms…</string>
 </resources>
