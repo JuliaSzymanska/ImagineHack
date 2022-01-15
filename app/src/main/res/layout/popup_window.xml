@@ -119,13 +119,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <de.hdodenhof.circleimageview.CircleImageView
+            <ImageView
                 android:id="@+id/addUserImage"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/female" />
+                android:src="@drawable/add_user_black" />
 
             <!--            <de.hdodenhof.circleimageview.CircleImageView-->
             <!--                android:id="@+id/addUserImage"-->
