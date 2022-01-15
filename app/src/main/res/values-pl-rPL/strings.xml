@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mój Kieszonkowy Lekarz</string>
+    <string name="a_doctor_nin_your_pocket">Doktor w Twojej kieszeni</string>
+    <string name="tabDiagnose">Diagnoza</string>
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="tabHistory">Historia</string>
+    <string name="tabUsers">Użytkownik</string>
+    <string name="my_pocket_doctor">Mój Kieszonkowy Lekarz</string>
+    <string name="add_new">Creat</string>
+    <string name="type_your_symptoms">Podaj swoje symptomy...</string>
+    <string name="hallo_only">"Witaj "</string>
+    <string name="how_can_i_help_you">\nJak mogę Ci dzisiaj pomóc?</string>
+    <string name="input_can_not_be_empty">Pole nie może być puste.</string>
+    <string name="yes">TAK</string>
+    <string name="no">NIE</string>
+    <string name="dont_know">NIE WIEM</string>
+    <string name="finish">KONIEC</string>
+    <string name="profile_name">Nazwa profilu:</string>
+    <string name="sex">Płeć:</string>
+    <string name="birth_date">Data urodzenia:</string>
+    <string name="yyyy_mm_dd">YYYY-MM-DD</string>
+    <string name="add">Dodaj</string>
+    <string name="_1995_03_23">1995-03-23</string>
+    <string name="add1">DODAJ</string>
+</resources>

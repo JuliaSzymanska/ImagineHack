@@ -69,7 +69,7 @@ public class DiagnoseFragment extends Fragment {
     private void setFirstMessage() {
         String firstDoctorMessage =
                 getString(R.string.hallo_only)
-                        + "Natalia! "
+                        + " Natalia! "
                         + getString(R.string.how_can_i_help_you);
         LinearLayout linearLayout = (LinearLayout) View.inflate(this.getContext(), R.layout.message_doctor,
                 null);

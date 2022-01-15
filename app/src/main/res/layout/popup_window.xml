@@ -119,13 +119,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/addUserImage"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/add_user_black" />
+                android:src="@drawable/male" />
 
             <!--            <de.hdodenhof.circleimageview.CircleImageView-->
             <!--                android:id="@+id/addUserImage"-->
@@ -203,7 +203,7 @@
                     android:layout_marginStart="60dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/female" />
+                    android:src="@drawable/female_black2" />
 
                 <ImageButton
                     android:id="@+id/male"
@@ -240,7 +240,7 @@
                     android:layout_marginStart="20dp"
                     android:background="@android:color/transparent"
                     android:focusable="true"
-                    android:text="@string/yyyy_mm_dd"
+                    android:text="@string/_1995_03_23"
                     android:textColor="@color/background_grey" />
 
             </LinearLayout>
@@ -257,7 +257,7 @@
             android:background="@drawable/button_background"
             android:padding="10dp"
             android:paddingHorizontal="30dp"
-            android:text="ADD"
+            android:text="@string/add1"
             android:textColor="@color/white"
             android:textSize="16sp" />
     </LinearLayout>
